@@ -1,0 +1,31 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Kies je sensoren",
+        "description": "Selecteer een binnentemperatuursensor en een relatieve-luchtvochtigheidssensor.",
+        "data": {
+          "temperature_entity": "Temperatuursensor",
+          "humidity_entity": "Luchtvochtigheidssensor"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Home Comfort Index is al ingesteld."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "comfort_score": {"name": "Comfortscore"},
+      "comfort_status": {
+        "name": "Comfortstatus",
+        "state": {
+          "very_comfortable": "Zeer comfortabel",
+          "comfortable": "Comfortabel",
+          "slightly_uncomfortable": "Een beetje oncomfortabel",
+          "uncomfortable": "Oncomfortabel"
+        }
+      }
+    }
+  }
+}

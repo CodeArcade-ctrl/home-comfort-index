@@ -1,0 +1,31 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Choose your sensors",
+        "description": "Select an indoor temperature sensor and a relative humidity sensor.",
+        "data": {
+          "temperature_entity": "Temperature sensor",
+          "humidity_entity": "Relative humidity sensor"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Home Comfort Index is already configured."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "comfort_score": {"name": "Comfort score"},
+      "comfort_status": {
+        "name": "Comfort status",
+        "state": {
+          "very_comfortable": "Very comfortable",
+          "comfortable": "Comfortable",
+          "slightly_uncomfortable": "A little uncomfortable",
+          "uncomfortable": "Uncomfortable"
+        }
+      }
+    }
+  }
+}
